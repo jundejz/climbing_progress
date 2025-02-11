@@ -13,19 +13,45 @@
             font-family: Arial, sans-serif;
             margin: 50px;
         }
-        input {
-            padding: 10px;
-            margin: 10px;
+        * {
+          box-sizing: border-box;
         }
-        button {
-            padding: 10px 20px;
-            cursor: pointer;
+
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
         }
     </style>
 </head>
 <body>
     <h1>An analysis of my climbing data</h1>
     <p>First of all, I use Excel as my data entry software of choice. See below for some screenshots of the raw data.</p>
+    <div class="row">
+      <div class="column">
+        <figure>
+          <img src="images/fulldatasample.png" style="width:25%">
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="images/gradetables.png" style="width:25%">
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="images/sanitycheck.png" style="width:25%">
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+      </div>
+    </div>
     <iframe title="climbing_dashboard" width="1280" height="720" src="https://app.powerbi.com/reportEmbed?reportId=a9b703c7-f179-4508-894c-153003cc5642&autoAuth=true&ctid=6efd0f20-57c8-4447-b53f-00d4992ca50b" frameborder="0" allowFullScreen="true"></iframe>
 </body>
 </html>
