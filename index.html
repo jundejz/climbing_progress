@@ -8,6 +8,8 @@
         h1 {
             text-align: center;
             font-size: 40px;
+            border-top: 2px solid #000000;
+            border-bottom: 2px solid #000000;
         }
         body {
             font-family: Arial, sans-serif;
@@ -27,8 +29,9 @@
             clear: both;
             display: table;
         }
-        figure img {
-            vertical-align: top;
+        figure {
+            display: inline-block;
+            margin: 20px; 
         }
     </style>
 </head>
@@ -39,19 +42,19 @@
       <div class="column">
         <figure>
           <img src="images/fulldatasample.png" style="width:100%">
-          <figcaption>Sample of my climbing data.</figcaption>
+          <figcaption>Figure 1: Sample of my climbing data.</figcaption>
         </figure>
       </div>
       <div class="column">
         <figure>
           <img src="images/gradetables.png" style="width:100%">
-          <figcaption>A count table to help be visualise number of climbs I have done based on either the gym's or my grading system.</figcaption>
+          <figcaption>Figure 2: A count table to help be visualise number of climbs I have done based on either the gym's or my grading system.</figcaption>
         </figure>
       </div>
       <div class="column">
         <figure>
           <img src="images/sanitycheck.png" style="width:100%">
-          <figcaption>A sanity check to ensure no climbs are lost.</figcaption>
+          <figcaption>Figure 3: A sanity check to ensure no climbs are lost.</figcaption>
         </figure>
       </div>
     </div>
